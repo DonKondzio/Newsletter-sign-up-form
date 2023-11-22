@@ -3,6 +3,7 @@ const subscribeBtn = document.querySelector(".subscribe-btn");
 const cardContainer = document.querySelector(".card-container");
 const cardNextStage = document.querySelector(".card-next-stage");
 const errorSpan = document.querySelector(".error-span");
+const emailSpan = document.querySelector(".email-span");
 
 const checkMail = () => {
   const re =
@@ -10,6 +11,7 @@ const checkMail = () => {
 
   if (re.test(email.value)) {
     showInfo();
+    emailSpan.textContent = email.value;
   } else {
     showError();
   }
