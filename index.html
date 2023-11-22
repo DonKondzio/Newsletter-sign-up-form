@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="h-screen flex justify-center items-center bg-darkSlateGray">
+    <div
+      class="card-container lg:flex lg:items-center lg:justify-between w-[375px] lg:w-[1440px] lg:p-8 lg:rounded-[2.5rem] bg-white"
+    >
+      <img
+        src="img/illustration-sign-up-mobile.svg"
+        alt=""
+        class="w-full lg:hidden"
+      />
+      <div
+        class="card-content lg:w-1/2 px-6 pb-10 lg:pb-0 space-y-6 lg:px-12 xl:space-y-12 text-darkSlateGray"
+      >
+        <p
+          class="my-6 lg:mb-12 xl:mb-24 text-4xl lg:text-5xl xl:text-[5rem] lg:leading-4 font-bold"
+        >
+          Stay updated!
+        </p>
+        <p class="lg:text-2xl">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="space-y-4 xl:text-2xl">
+          <li class="flex items-start">
+            <img class="mr-4 lg:w-8" src="./img/icon-list.svg" alt="" />
+            Product discovery and building what matters
+          </li>
+          <li class="flex items-start">
+            <img class="mr-4 lg:w-8" src="./img/icon-list.svg" alt="" />
+            Measuring to ensure updates are a success
+          </li>
+          <li class="flex items-start">
+            <img class="mr-4 lg:w-8" src="./img/icon-list.svg" alt="" />
+            And much more!
+          </li>
+        </ul>
+
+        <div class="relative">
+          <label
+            for="email"
+            class="block w-fit mt-6 mb-2 lg:mt-14 font-bold text-xs lg:text-base"
+          >
+            Email address
+          </label>
+          <span
+            class="error-span hidden absolute right-0 top-0 text-xs lg:text-base font-bold text-tomato"
+            >Valid email required</span
+          >
+          <input
+            type="text"
+            id="email"
+            placeholder="email@company.com"
+            class="w-full py-4 px-6 lg:px-8 rounded-lg border border-gray-400"
+          />
+        </div>
+        <button
+          class="subscribe-btn w-full p-4 lg:p-5 rounded-lg bg-darkSlateGray hover:bg-charcoalGray transition-colors text-white lg:text-lg"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <img
+        src="img/illustration-sign-up-desktop.svg"
+        alt=""
+        class="hidden lg:block lg:w-2/5"
+      />
+    </div>
+    <div
+      class="card-next-stage hidden px-6 py-10 lg:p-16 w-[375px] lg:w-[700px] lg:rounded-[2.5rem] bg-white text-darkSlateGray"
+    >
+      <img
+        class="w-16 lg:w-20 mt-28 lg:mt-0 mb-10 lg:mb-12"
+        src="./img/icon-list.svg"
+        alt=""
+      />
+      <p class="text-[2.5rem] leading-10 lg:text-7xl font-bold">
+        Thanks for subscribing!
+      </p>
+
+      <p class="mt-6 mb-[17rem] lg:leading-10 lg:mb-12 lg:text-2xl">
+        A confirmation email has been sent to
+        <span class="font-bold">ash@loremcompany.com.</span> Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+      <button
+        class="w-full p-4 lg:p-5 rounded-lg bg-darkSlateGray hover:bg-charcoalGray transition-colors text-white lg:text-lg"
+      >
+        Dismiss message
+      </button>
+    </div>
+  </body>
+</html>
